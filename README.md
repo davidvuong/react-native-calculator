@@ -15,11 +15,40 @@ This is meant to be a project to introduce you to JavaScript (ES6), ReactJS, and
     cd react-native-calculator
     ```
 
+1. Install NodeJS and `watchman`:
+
+    ```bash
+    nvm install 6.10.3
+    brew install watchman
+    ```
+
+1. Make sure you are on the latest version of Xcode.
+
 1. Download and install all project dependencies:
 
     ```bash
     npm install
     ```
+
+1. Run the `react-native` development process:
+
+    ```bash
+    npm start
+    ```
+
+    This essentially starts a process that connects the code you write inside your Mac to the iPhone simulator.
+
+1. Build the iOS application:
+
+    Make sure to open a new terminal tab in the same directory before running the command.
+
+    ```bash
+    npm run build
+    ```
+
+    This command will open up the `simulator.app` and do a bit of funky magic to convert the code you wrote into an iOS app.
+
+1. Open the `calculator` app inside your simulator
 
 ## Further documentation
 
