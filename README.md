@@ -4,7 +4,7 @@
 
 This is meant to be a project to introduce you to JavaScript (ES6), ReactJS, and React Native. The project is to build a calculator app (simplified version of the native iOS calculator). You'll learn about how to write JavaScript using ES6, ReactJS (with JSX) and how to use React Native to create pseudo-native apps.
 
-**NOTE:** Although the main advantage of using React Native is to build a cross-platform app, the only environment we're going to be targeting is iOS device. Android devices won't be supported.
+**NOTE:** Although the main advantage of using React Native is to build a cross-platform app, the only environment we're going to be targeting is iOS. Android devices won't be supported.
 
 ## Installation
 
@@ -23,6 +23,12 @@ This is meant to be a project to introduce you to JavaScript (ES6), ReactJS, and
     ```
 
 1. Make sure you are on the latest version of Xcode.
+
+1. Clear your NPM cache because it can cause problems:
+
+    ```bash
+    npm cache clean
+    ```
 
 1. Download and install all project dependencies:
 
@@ -49,6 +55,10 @@ This is meant to be a project to introduce you to JavaScript (ES6), ReactJS, and
     This command will open up the `simulator.app` and do a bit of funky magic to convert the code you wrote into an iOS app.
 
 1. Open the `calculator` app inside your simulator
+
+## Development
+
+After you've built the iOS app, you don't need to rebuild it unless you make a change to native code (ObjectiveC for iOS and Java for Android). However, you still need to make sure you start the react-native process with `npm start` and open `simulator.app` to access the calculator app.
 
 ## Further documentation
 
