@@ -60,9 +60,9 @@ This is meant to be a project to introduce you to JavaScript (ES6), ReactJS, and
 
 After you've built the iOS app, you don't need to rebuild it unless you make a change to native code (ObjectiveC for iOS and Java for Android). However, you still need to make sure you start the react-native process with `npm start` and open `simulator.app` to access the calculator app.
 
-If you take a look at the `index.ios.js` file, you'll see that we have a very basic app called `Calculator`. It has a few buttons for numbers and a couple more for operations. Try to read and understand how it's implemented. I've written plenty of comments to help guide you through the code. Ask if you need help.
+If you take a look at the [`index.ios.js`](./index.ios.js) file, you'll see that we have a very basic app called `Calculator`. It has a few buttons for numbers and a couple more for operations. Try to read and understand how it's implemented. I've written plenty of comments to help guide you through the code. Ask if you need help.
 
-Once you have an understanding, I want you to extend app by adding additional features, refactoring code, handling edge cases etc. See the next section (Tasks) for more details.
+Once you have an understanding, you to extend app by adding additional features, refactoring code, handling edge cases etc. See the next section (`Tasks`) for more details.
 
 ### Tasks
 
