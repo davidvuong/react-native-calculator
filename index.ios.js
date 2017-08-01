@@ -20,7 +20,7 @@ export default class Calculator extends Component {
     };
   }
 
-  /* Function is called when I press a number button. */
+  /* Function is called when a number button is pressed. */
   onNumberButtonPress = (value) => {
     const calc = this.state.calculation;
 
@@ -36,14 +36,14 @@ export default class Calculator extends Component {
     this.setState({ calculation: calc });
   };
 
-  /* Function is called when I press an operation (+, -, *, /) button. */
+  /* Function is called when an operation (+, -, *, /) is pressed. */
   onOperationButtonPress = (operation) => {
     const calc = this.state.calculation;
 
     // You can only specify an operation in-between numbers.
     //
-    // if leftOperand === null means we haven't specified the first number.
-    // if rightOperand !== null means we've already specified an operator
+    // if leftOperand === '' means we haven't specified the first number.
+    // if rightOperand !== '' means we've already specified an operator
     if (calc.leftOperand === '' || calc.rightOperand !== '') {
       return null;
     }
@@ -52,7 +52,7 @@ export default class Calculator extends Component {
     this.setState({ calculation: calc });
   };
 
-  /* Function is called when I press the '=' button. */
+  /* Function is called when '=' is pressed. */
   onCalculate = () => {
     const calc = this.state.calculation;
 
